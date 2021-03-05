@@ -1,0 +1,223 @@
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Moderate cyan: hsl(176, 50%, 47%)
+- Dark cyan: hsl(176, 72%, 28%)
+
+### Neutral
+
+- Black: hsl(0, 0%, 0%)
+- Dark gray: hsl(0, 0%, 48%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Commissioner](https://fonts.google.com/specimen/Commissioner)
+- Weights: 400, 500, 700 */
+
+
+body{
+    font-family: 'Commissioner', sans-serif;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    width: 50%;
+    margin: auto;
+}
+
+
+
+    #logo{
+        position: absolute;
+        top: 7vh;
+        left: 8vw;
+        z-index: 10;
+    }
+    
+
+    #logo-mastercraft{
+        position: absolute;
+        z-index: 21;
+        top: 40vh;
+        left: 45vw;
+        
+    }
+    #image-hero{
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #presentation{
+        position: absolute;
+        background: white;
+        width: 50%;
+        height: 30vh;
+        top: 47vh;
+        z-index: 20;
+        border-radius: 20px;
+        text-align: center;
+
+    }   
+
+      #back-project{
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+        background: hsl(176, 72%, 28%);
+        color: white;
+        border: none;
+        font-weight: 800;
+        padding: 15px 30px;
+        border-radius: 24px; /*Exact border-radius to reach the effect*/
+        
+      }
+
+        #back-project:hover{
+          color: hsl(176, 50%, 47%);
+        }
+
+      #bookmark{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background: grey;
+        border-radius: 28px;
+        cursor: pointer;
+          
+      }
+        #bookmark svg{
+          transform: scale(0.8);
+        }
+         
+
+    nav{
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 5vh 10vw;
+    }
+
+    nav li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 0 1vw;
+        color: #fff;
+        font-weight: 700;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  
+  main {
+    margin-top: 85vh;
+    display: grid;
+    grid-template-areas: "p p p" "p p p";
+    grid-template-rows: 5vh 5vh;
+    background: white;
+    height: 20vh;
+    padding-left: 5vw;
+    border-radius: 8px;
+    
+  }
+    main .stats{
+      font-weight: 800;
+      font-size: 1.5vw;
+    }
+
+  #progress-bar-container{
+    background: white;
+    border-radius: 8px ;
+  }
+    progress {
+      width: 40vw;
+      height: 3vh;
+      margin: 0vh 5vw; 
+    }
+    
+  section{
+    margin-top: 100px;
+    background: white;
+    padding: 15px;
+    
+  }
+  
+    .project-explanation{
+      color: grey;
+      font-weight: lighter;
+      font-size: 15px;
+      padding: 15px;
+    }
+
+    .give-reward{
+      border: 1px solid rgba(192, 192, 192, 0.48);
+      border-radius: 10px;
+      margin: 20px 10px;
+      padding: 15px;
+    }
+
+      .pledge-amount{
+        float: right;
+        margin: -40px 10px;
+        color: hsl(176, 50%, 47%);
+        font-weight: 700;
+      }
+      .reward-explanation{
+        color: grey;
+        font-weight: lighter;
+        font-size: 15px;
+      }
+      .btn-select-reward{
+        color: white;
+        font-size: 12px;
+        font-weight: 800;
+        background: hsl(176, 50%, 47%);
+        float: right;
+        margin: -8vh 1vw;
+        border-radius: 28px;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+      }
+
+        .btn-select-reward:hover{
+          background: hsl(176, 72%, 28%);
+        }
+
+      .btn-out-stock{
+        background: rgba(155, 155, 155, 0.48);
+        color: white;
+        font-size: 12px;
+        font-weight: 800;
+        float: right;
+        margin: -8vh 1vw;
+        border-radius: 28px;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+
+      }
+      #out-of-stock{
+        opacity: .5;
+      }
+
+      h5{
+        margin: 0;
+      }
