@@ -74,7 +74,7 @@ body{
         text-align: center;
 
     }   
-
+      /* "Back this project" Button */
       #back-project{
         position: absolute;
         bottom: 20px;
@@ -85,7 +85,8 @@ body{
         font-weight: 800;
         padding: 15px 30px;
         border-radius: 24px; /*Exact border-radius to reach the effect*/
-        
+        outline: none;
+        cursor: pointer;
       }
 
         #back-project:hover{
@@ -94,15 +95,27 @@ body{
 
       #bookmark{
         position: absolute;
-        bottom: 20px;
-        right: 20px;
-        background: grey;
+        bottom: 15px;
+        right: 15px;
+        
         border-radius: 28px;
-        cursor: pointer;
-          
+        
+        
       }
-        #bookmark svg{
+        #bookmark button{
+        
+          float: right;
+          background: none;
+          border: none;
+          color: white;
+          font-family: sans-serif;
+          outline: none;
+          cursor: pointer;
+        }
+
+        #bookmark button svg{
           transform: scale(0.8);
+          float: left;
         }
          
 
@@ -123,7 +136,7 @@ body{
     }
     a{
       text-decoration: none;
-      color: black;
+      
     }
   
   main {
@@ -134,9 +147,10 @@ body{
     background: white;
     height: 20vh;
     padding-left: 5vw;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     
   }
+
     main .stats{
       font-weight: 800;
       font-size: 1.5vw;
@@ -144,7 +158,7 @@ body{
 
   #progress-bar-container{
     background: white;
-    border-radius: 8px ;
+    border-radius: 0 0 8px 8px;
   }
     progress {
       width: 40vw;
@@ -156,7 +170,7 @@ body{
     margin-top: 100px;
     background: white;
     padding: 15px;
-    
+    border-radius: 10px;
   }
   
     .project-explanation{
@@ -195,6 +209,7 @@ body{
         border: none;
         padding: 15px;
         cursor: pointer;
+        outline: none;
       }
 
         .btn-select-reward:hover{
@@ -214,6 +229,7 @@ body{
         cursor: pointer;
 
       }
+
       #out-of-stock{
         opacity: .5;
       }
@@ -221,3 +237,91 @@ body{
       h5{
         margin: 0;
       }
+
+  .modal-container{
+    width: 50vw;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    margin-top: 10px;
+    /*
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;*/
+  }
+    .modal-container h4{
+      font-size: 18px;
+      margin: 1vh 1vw;
+    }
+    .modal-container .close-modal{
+      color: gray;
+      font-weight: 700;
+      font-size: 18px;
+      background: white;
+      border: 1px solid gray;
+      border-radius: 50%;
+      float: right;
+      margin: -3vh 2vw;
+      cursor: pointer;
+    }
+    .modal-container #intro-modal{
+      color: gray;
+      margin: 1vh 1vw;
+    }
+    .modal-container .pledge-amount-modal{
+      color: hsl(176, 72%, 28%);
+      float:right;
+      font-weight: 700;
+    }
+
+    .pledge{
+      border-top: 1px solid gray;
+      /*visibility: hidden;*/
+    }
+    
+
+    .pledge button{
+      border-radius: 25px;
+      border: none;
+      background: hsl(176, 72%, 28%);
+      color: white;
+      padding: 11px;
+    }
+    
+
+  /*Style only for modal window at the end, when the user support the project*/  
+  .success-modal{
+    background: white;
+    margin: 5vh auto;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    /*
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;*/
+  }
+  .success-modal button{
+    border: none;
+    background: hsl(176, 72%, 28%);
+    color: white;
+    font-weight: 700;
+    font-family: "Comissioner";
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    
+  }
+    
